@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="info">
+            <h1 id="title">Job Application</h1>
+            <p id="description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Explicabo delectus ratione impedit numquam esse, iste necessitatibus libero? 
+                Impedit, corporis mollitia adipisci perferendis commodi.
+            </p>
+        </header>
+        <main id="form">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter your Email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <input id="number" type="number" min="10" max="99" placeholder="Enter your age" required>
+                </div>
+                <div class="form-group">
+                    <label id="dropdown-label" for="dropdown">Your current position</label>
+                    <select id="dropdown" required>
+                        <option disabled selected>Select an option</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="fullstack">Fullstack Developer</option>
+                        <option value="mobile">Mobile Developer</option>
+                        <option value="game">Game Developer</option>
+                        <option value="other">Other (Please Specify)</option>
+                    </select>
+                </div>
+                <div class="form-group-fieldset">
+                    <fieldset id="radio-fieldset">
+                        <legend id="radio-legend">Your experience level</legend>
+                        <input id="jr" type="radio" name="exp">
+                        <label for="jr">Junior</label><br>
+                        <input id="mid" type="radio" name="exp">
+                        <label for="mid">Mid-Level</label><br>
+                        <input id="sr" type="radio" name="exp">
+                        <label for="sr">Senior</label><br>
+                    </fieldset>
+                </div>
+                <div class="form-group-fieldset">
+                    <fieldset id="checkbox-fieldset">
+                        <legend id="checkbox-legend">Position you are applying for</legend>
+                        <input id="frontend" type="checkbox" value="frontend">
+                        <label for="frontend">Frontend Developer</label><br>
+                        <input id="backend" type="checkbox" value="backend">
+                        <label for="backend">Backend Developer</label><br>
+                        <input id="mobile" type="checkbox" value="mobile">
+                        <label for="mobile">Mobile Developer</label><br>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Tell us a little about yourself</label><br>
+                    <textarea id="textarea" placeholder="I like cookies..." rows="8"></textarea>
+                </div>
+                <button id="submit">Submit your application</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

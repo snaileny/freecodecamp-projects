@@ -1,0 +1,138 @@
+*, *::after, *::before {
+
+    box-sizing: border-box;
+
+}
+
+html, body {
+
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.05fr 1fr 0.05fr;
+
+    background-color: #dfdfdf;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#wrapper {
+
+    grid-column: 2;
+    grid-row: 2;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 32px 128px;
+    background-color: #eeeeee;
+    border-radius: 1%;
+    box-shadow: 3px 3px 15px #999999;
+    color: #202020;
+    line-height: 1.5;
+}
+
+#wrapper p {
+
+    font-size: large;
+
+}
+
+#info {
+
+    padding-bottom: 24px;
+    border-bottom: 2px solid;
+    
+
+}
+
+#form {
+    
+    margin-top: 48px;
+
+}
+
+#submit {
+
+    width: 100%; 
+    min-height: 48px;
+    border: solid #202020;
+    background-color: #eeeeee;
+    cursor: pointer;
+    color: #202020;
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#submit:hover {
+    background-color: #202020;
+    color: #eeeeee;
+}
+
+#submit:active {
+
+    padding-top: 2px;
+    
+}
+
+.form-group label, .form-group-fieldset legend {
+
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.form-group input, #dropdown, #textarea {
+
+    min-height: 36px;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 32px;
+    padding: 4px 8px;
+    border: solid thin #202020;
+    color: #202020;
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group-fieldset fieldset {
+
+    border: 0;
+    border: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-bottom: 32px;
+    
+}
+
+.form-group-fieldset legend {
+
+    margin-bottom: 8px;
+
+}
+
+.form-group-fieldset input {
+
+    margin: 6px 4px;
+
+}
+
+
+
+
+
