@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <div id="header-logo">
+            <img id="header-img">
+            <!-- freecodecamp requires an img tag with an id - but i dont have an image-->
+            <h1>COMPANY LOGO</h1>
+        </div>
+        <nav id="nav-bar">
+            <ul id="nav-list">
+                <li class="nav-link"><a href="#section-video">About</a></li>
+                <li class="nav-link" id="nav-link-middle"><a href="#section-features">Features</a></li>
+                <li class="nav-link"><a href="#section-options">Options</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section-video">
+        <div id="section-content-wrap">
+        <h1>Our Product Is Cool</h1>
+            <form id="form">
+                <label for="email">Everyone uses our product. Contact us.</label><br>
+                <input id="email" type="email" placeholder="Enter your email">
+                <button id="email-button">Submit</button>
+            </form>
+        </div>
+        <iframe id="video"
+        src="https://www.youtube.com/embed/coolvideo" 
+        frameborder="0"></iframe>
+    </section>
+    <section id="section-features">
+        <div class="features">
+            <div class="feature" id="quality">
+                <h2>High Quality</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nesciunt, inventore laboriosam similique aspernatur amet.</p>
+            </div>
+            <div class="feature" id="secure">
+                <h2>Secure</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam nulla, nemo vitae repellat quas impedit nisi distinctio ratione deserunt labore!</p>
+            </div>
+            <div class="feature" id="easy">
+                <h2>Easy To Embed</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quia asperiores consequatur deserunt accusantium consequuntur?</p>
+            </div>
+        </div>
+    </section>
+    <section id="section-options">
+        <div class="option">
+            <h4 class="option-title">Normal</h4>
+            <ul class="option-list">
+                <li class="option-element">Lorem ipsum dolor sit amet.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+            <button class="option-select">Select</button>
+        </div>
+        <div class="option">
+            <h4 class="option-title">Extra</h4>
+            <ul class="option-list">
+                <li class="option-element">Lorem ipsum dolor sit amet.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="option-element">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <button class="option-select">Select</button>
+        </div>
+        <div class="option">
+            <h4 class="option-title">Pro</h4>
+            <ul class="option-list">
+                <li class="option-element">Lorem ipsum dolor sit amet.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="option-element">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                <li class="option-element">Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+            <button class="option-select">Select</button>
+        </div>
+    </section>
+    <footer id="footer">
+        <li id="footer-list">
+            <ul class="footer-element"><a href="#">Privacy</a></ul>
+            <ul class="footer-element" id="footer-element-middle"><a href="#">Terms of Use</a></ul>
+            <ul class="footer-element"><a href="#">Contact</a></ul>
+        </li>
+    </footer>
+</body>
+</html>
