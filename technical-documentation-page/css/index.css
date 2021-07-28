@@ -1,0 +1,176 @@
+*, :after, :before {
+
+    box-sizing: border-box;
+
+}
+
+html, body {
+
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#navbar {
+
+    position: fixed;
+    z-index: 2;
+    width: 320px;
+    max-width: 320px;
+    height: 100%;
+    background-color: #202020;
+    box-shadow: 0px 0px 8px 4px gray;
+
+}
+
+.nav-header {
+
+    font-family: 'Arvo', serif;
+    font-size: xx-large;
+    text-align: left;
+    padding: 24px 0px 24px 36px;
+    margin: 0;
+    border-bottom: white solid medium;
+
+}
+
+.nav-header a {
+
+    color: white;
+    text-decoration: 0;
+
+}
+
+.nav-header a:hover {
+
+    text-decoration: underline white;
+}
+
+.nav-list {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+.nav-list-element {
+
+    padding: 24px 0px 24px 36px;
+    font-size: larger;
+    border-bottom: white solid thin;
+
+}
+
+.nav-list-element a {
+
+    color: white;
+    text-decoration: 0;
+
+}
+
+.nav-list-element a:hover {
+
+    text-decoration: underline white;
+
+}
+
+#main-doc {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 320px;
+    z-index: 1;
+    padding: 64px;
+    background-color: #eeeeee;
+
+}
+
+.main-section {
+
+    margin: 0 0 36px 0;
+
+}
+
+.section-header {
+    
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    font-family: 'Arvo', serif;
+    font-size: xx-large;
+    text-align: left;
+    border-bottom: #202020 solid medium;
+
+}
+
+.section-header a {
+
+    color: #202020;
+    text-decoration: none;
+
+}
+
+.section-header a:hover:after {
+
+    font-family: 'Arvo', serif;
+    font-size: xx-large;
+    color: #202020;
+    content: " #";
+
+}
+
+.section-code {
+
+    display: block;
+    height: 2em;
+    padding: 0.4em 0 0.4em 0.4em;
+    font-size: large;
+    background-color: #dddddd;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #navbar {
+
+        position: relative;
+        min-width: 100%;
+        max-height: 320px;
+        text-align: center;
+        overflow-y: scroll;
+
+    }
+
+    .nav-header {
+
+        text-align: center;
+        padding: 24px 0;
+    }
+
+    .nav-list-element {
+
+        padding: 24px 0px;
+    
+    }
+
+    #main-doc {
+
+        top: 320px;
+        left: 0;
+        border-top: #202020 solid thick;
+
+    }
+
+}
