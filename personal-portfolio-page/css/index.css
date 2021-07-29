@@ -84,6 +84,7 @@ h2 {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin-top: 2em;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 
 }
