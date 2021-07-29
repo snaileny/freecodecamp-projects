@@ -175,6 +175,7 @@ h2 {
     padding-bottom: 1em;
     color: #101010;
     font-size: medium;
+    font-weight: bold;
     text-decoration: none;
 
 }
@@ -231,7 +232,37 @@ h2 {
 
 #void {
 
-    padding-top: 64em;
+    height: 100vh;
     background-image: linear-gradient(to top, #e7f0fd  0%, #accbee 100%);
 
 }
+
+
+@media only screen and (max-width: 1024px) {
+
+    #project-box {
+
+        flex-direction: column;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #project-box {
+
+        flex-direction: column;
+
+    }
+
+    #contact-list {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
